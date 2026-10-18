@@ -1,0 +1,11 @@
+Company Directory Tree - Design Memo
+
+For this assignment, I built a company directory using a binary tree to organize employees based on who they report to. Each employee has a name and can have up to two direct reports, one on the left and one on the right. The first employee added becomes the team lead at the top of the tree.
+
+Recursive insertion works by starting at the root and checking whether the current employee matches the manager's name. If it doesn't match, the program continues searching through the left and right branches until it finds the correct manager. Once the manager is found, the program checks if the requested position is available before adding the employee.
+
+One challenge I ran into was getting employees added to the correct position. During testing, I had an issue where the program was telling me a position was already taken or that the manager couldn't be found. I had to go back through the insertion logic and make sure the program was finding the manager before checking the left or right position. Testing different employees helped me understand how the tree works.
+
+I think trees are useful in real-world situations where information follows a hierarchy. For example, companies use organizational charts, computers use folder structures, and websites organize pages into different levels. Compared to a regular list, a tree makes it easier to see how different parts are connected.
+
+Overall, this assignment helped me understand recursion better and how a tree can organize information in a way that makes sense.
